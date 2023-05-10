@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Calibri';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+section {
+    padding: 70px 0px;
+}
+
+.custom-container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #646464;
+    transition: 0.2s;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+/*================ HEADER START ================ */
+header .topheader {
+    background: #aae7c0;
+}
+
+header .header-logo {
+    max-width: 190px;
+}
+
+header .headernav ul li:last-child {
+    border-right: none;
+}
+
+header .humbericon {
+    display: none;
+}
+
+header .phone p {
+    color: #fff;
+    font-size: 19px;
+}
+
+header .phone p a {
+    color: #009dff;
+    font-weight: bold;
+    margin-left: 14px;
+}
+
+header .headerlogoblog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+
+header .headernav ul li {
+    display: block;
+    width: 20%;
+    border-right: solid 1px #fff;
+}
+
+header .headernav ul li a {
+    padding: 13px 2px;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(white 25px, #efefef 8px);
+    transition: 0.2s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+header .headernav ul li a:hover,
+header .headernav ul li.active a {
+    background-image: linear-gradient(#4290c0 25px, #0065a3 8px);
+    color: #fff;
+}
+
+header .headernav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px 0px;
+}
+
+header .mobileview {
+    display: none !important;
+}
+
+header .phone {
+    display: block;
+}
+
+/*================ HEADER END ================ */
+
+
+/*================ SLIDER BANNER START ================ */
+.sliderSection {
+    padding: 0;
+}
+
+.sliderSection .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 97%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sliderSection .owl-nav button {
+    width: 45px;
+    background: #aae7c0d1 !important;
+    height: 45px;
+    font-size: 40px !important;
+    border-radius: 50px !important;
+    color: #fff !important;
+}
+
+.sliderSection .owl-nav button span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 20px;
+}
+
+/*================ SLIDER BANNER END ================ */
+
+/*================ READY SECTION START ================ */
+
+.readySection {
+    padding-bottom: 0px;
+}
+
+.readySection h2 {
+    font-size: 35px;
+    color: #383838;
+    margin-bottom: 18px;
+}
+
+.readySection p {
+    font-size: 22px;
+    color: #242424;
+}
+
+/*================ READY SECTION END ================ */
+
+/*================ SERVICE SECTION START ================ */
+
+.serviceSection .servicesBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.serviceSection .serviceItem {
+    width: 300px;
+    text-align: center;
+}
+.serviceSection .serviceItem .service-img {
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceSection .serviceItem img {
+    max-width: 260px;
+}
+
+.serviceSection .serviceItem button {
+    padding: 16px 23px;
+    background-color: #333333;
+    border: aliceblue;
+    border-color: #333333;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #009DFF;
+    min-width: 90px;
+}
+
+.serviceSection .serviceItem p {
+    color: white;
+    font-weight: 400;
+    font-kerning: normal;
+}
+
+.serviceSection .serviceItem button h3 {
+    font-size: 20px;
+}
+
+/*================ SERVICE SECTION END ================ */
+
+
+/*================ FOOTER START ================ */
+footer {
+    padding-bottom: 15px;
+}
+
+
+footer .footer-menu {
+    display: flex;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #cccc;
+    padding: 15px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .footer-menu ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-menu ul li {
+    margin-right: 30px;
+}
+
+footer .footer-menu ul li a,
+footer .footer-menu p {
+    font-size: 15px;
+    color: #878787;
+}
+
+footer .footer-menu ul li a:hover {
+    color: #4290c0;
+}
+
+/*================ FOOTER END ================ */
+
+
+
+/*RESPONSIVE CSS*/
+
+@media(max-width: 767px) {
+    header .mobileview {
+        display: block !important;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    header .mobileview p {
+        color: #000;
+    }
+
+    header .phone {
+        display: none;
+    }
+
+    header .humbericon.openmenu {
+        background: url(../images/close-menu.png);
+    }
+
+    header .humbericon {
+        display: block;
+        position: absolute;
+        right: 30px;
+        background: url(../images/menu-icon.png);
+        width: 31px;
+        height: 32px;
+        background-size: 30px !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        top: 27px;
+        z-index: 9;
+    }
+
+    body.openmenu {
+        overflow: hidden;
+    }
+
+    header .menu {
+        position: absolute;
+        background: #ffffff;
+        width: 100%;
+        left: -100%;
+        top: 72px;
+        height: 100vh;
+        transition: 0.5s;
+        display: block !important;
+        border-radius: 0px !important;
+        z-index: 9;
+    }
+
+    body.openmenu header .menu {
+        left: 0;
+        top: 72px;
+    }
+
+    header .headerlogoblog {
+        padding: 10px 65px 10px 10px;
+    }
+
+    header .headernav ul li {
+        width: 100%;
+    }
+
+    header .headernav ul li a {
+        background: #fff;
+        border-bottom: solid 1px #0065a31f;
+    }
+
+    header .headernav ul li a:hover,
+    header .headernav ul li.active a {
+        background: #0065a3;
+    }
+
+    footer .footer-menu,
+    footer .footer-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-menu ul li {
+        margin: 0 0 10px 0;
+    }
+
+}
